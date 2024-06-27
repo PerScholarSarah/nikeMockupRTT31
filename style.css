@@ -1,0 +1,143 @@
+/* CSS: Is where we style and adjust the elements we created in HTML */
+
+/* top-level */
+.navbar{
+    border:solid blue;
+    /* height:12vh; */
+    margin:1em;
+    display:flex;
+    justify-content: space-between;
+}
+.mainPic{
+    border:solid green;
+    height:fit-content;
+    margin:1em;
+}
+.adContainer{
+    border:solid purple;
+    height:fit-content;
+    margin:1em;
+    display:grid;
+    grid-template: 50% 50%/50% 50%;
+}
+
+/* navbar elements */
+.logo{
+    height:45px;
+    /* width:50%; */
+}
+.iconParent{
+    /* border:solid red; */
+    margin-top:5px;
+    width:50%;
+    display:flex;
+    justify-content: space-evenly;
+}
+.icon{
+    height:30px;
+}
+
+/* mainPic elements */
+.bigPicture{
+    position:inherit;
+    width:100%;
+    max-height:70%;
+    z-index:0;
+}
+.picTitle{
+    position:inherit;
+    text-align:center;
+    font-family:serif;
+    z-index:1;
+}
+.btnContainer{
+    /* border:solid blue; */
+    position:inherit;
+    align-self:center;
+    bottom:0;
+    display: flex;
+    justify-content: space-evenly;
+    z-index:1;
+}
+.shop, .login{
+    font-size:19px;
+    background-color:black;
+    color:white;
+    width:33%;
+    border-radius:20px;
+}
+.shop:hover, .login:hover{
+    font-size:19px;
+    background-color:black;
+    color:lime;
+    width:33%;
+    border-radius:20px;
+}
+
+/* adContainer elements */
+.adCard{
+    border:solid cyan;
+    position:relative;
+    display:flex;
+}
+.adImage{
+    position:relative;
+    width:100%;
+    max-height:100%;
+    
+}
+.adText{
+    /* border:solid magenta; */
+    position:absolute;
+    bottom:5%;
+    left:5%;
+    color: white;
+}
+.adTitle{
+    font-size:25px;
+    margin-bottom:5%;
+}
+.productContainer{
+    border:solid red;
+    /* height:50vh; */
+    padding:1em;
+    display:flex;
+    flex-wrap:wrap;
+}
+.productBox{
+    border:solid blue;
+    height:250px;
+    width:250px;
+    padding:1em;
+    margin:1em;
+}
+.productImage{
+    border:solid purple;
+    width:100%;
+}
+.productTitle{
+    border:solid peru;
+}
+.price{
+    border:solid green;
+}
+.starContainer{
+    border:solid salmon;
+    padding:1em;
+    display:flex;
+
+}
+.starHolder{
+    border:solid black;
+    height:20px;
+    width:50%;
+}
+.ratingBox{
+    /* border:solid orange; */
+    height:20px;
+    width:50%;
+    text-align:center;
+}
+.star{
+    height:80%;
+}
